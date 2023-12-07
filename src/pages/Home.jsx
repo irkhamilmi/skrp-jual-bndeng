@@ -5,6 +5,7 @@ import hero3 from "./../assets/img/hero3.jpg";
 
 import Carousel from "react-bootstrap/Carousel";
 import { Card, Button } from "react-bootstrap";
+import Accordion from "react-bootstrap/Accordion";
 
 const Home = () => {
   return (
@@ -50,7 +51,7 @@ const Home = () => {
           </Container>
         </header>
 
-        <div className="my-5 mx-auto">
+        <div className="my-5 w-100 min-vh-100">
           <Container>
             <Row>
               <h1 className="text-center fw-bold">Menu favorit</h1>
@@ -114,33 +115,141 @@ const Home = () => {
                     </div>
                   </div>
                 </Col>
-              </div>
-
-              <div
-                className="card mt-5 mb-3 mx-auto"
-                style={{ maxWidth: "800px" }}
-              >
-                <div className="row ">
-                  <div className="col-md-4 p-0">
-                    <img src={hero} className="w-100 rounded-start " />
-                  </div>
-                  <div className="col-md-8">
-                    <div className="card-body">
-                      <h2 className="card-title fw-bold mb-3">
-                        Best Bandeng Presto <br />
-                        Since 2023
-                      </h2>
-                      <p className="card-text mb-4">
-                        This is a wider card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer. Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Laboriosam, suscipit?
+                <Col>
+                  <div className="col card text-black border shadow rounded-4 my-3">
+                    <img
+                      src={hero3}
+                      alt=""
+                      className="rounded-top-4 w-full h-full object-cover"
+                    />
+                    <div className="p-3">
+                      <h4>
+                        <strong>Bandeng presto</strong>
+                      </h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit.
                       </p>
-                      <button className="btn btn-danger">Order Disini</button>
                     </div>
                   </div>
-                </div>
+                </Col>
+                <Col>
+                  <div className="col card text-black border shadow rounded-4 my-3">
+                    <img
+                      src={hero3}
+                      alt=""
+                      className="rounded-top-4 w-full h-full object-cover"
+                    />
+                    <div className="p-3">
+                      <h4>
+                        <strong>Bandeng presto</strong>
+                      </h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit.
+                      </p>
+                    </div>
+                  </div>
+                </Col>
+                <Col>
+                  <div className="col card text-black border shadow rounded-4 my-3">
+                    <img
+                      src={hero3}
+                      alt=""
+                      className="rounded-top-4 w-full h-full object-cover"
+                    />
+                    <div className="p-3">
+                      <h4>
+                        <strong>Bandeng presto</strong>
+                      </h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit.
+                      </p>
+                    </div>
+                  </div>
+                </Col>
               </div>
+            </Row>
+          </Container>
+        </div>
+
+        <div className="my-5 pt-5 w-100 min-vh-100">
+          <Container>
+            <Row>
+              <h2 className="text-center fw-bold mb-5">
+                Pertanyaan yang sering ditanyakan
+              </h2>
+              <Row className="row-cols-lg-2 row-cols-1 shadow g-4">
+                <Col>
+                  <Accordion defaultActiveKey="0" flush>
+                    <Accordion.Item eventKey="0">
+                      <Accordion.Header>Apakah ikan fesh ?</Accordion.Header>
+                      <Accordion.Body>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum.
+                      </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="1">
+                      <Accordion.Header>
+                        Bagaimana cara pengolahan nya ?
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum.
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </Accordion>
+                </Col>
+                <Col>
+                  <Accordion defaultActiveKey="0" flush>
+                    <Accordion.Item eventKey="0">
+                      <Accordion.Header>Berapa hari expired ?</Accordion.Header>
+                      <Accordion.Body>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum.
+                      </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="1">
+                      <Accordion.Header>
+                        Apakah mengandung obat-obatan khusus ?
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum.
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </Accordion>
+                </Col>
+              </Row>
             </Row>
           </Container>
         </div>

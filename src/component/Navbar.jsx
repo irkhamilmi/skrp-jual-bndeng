@@ -4,7 +4,7 @@ import logo from "./../assets/logo.png";
 const Navs = () => {
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar expand="lg" className="bg-body-tertiary p-3 sticky-top">
         <Container>
           <Navbar.Brand href="/">
             <img src={logo} alt="" style={{ width: 140 }} />
