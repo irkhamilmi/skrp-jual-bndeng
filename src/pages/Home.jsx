@@ -10,14 +10,15 @@ const Home = () => {
   return (
     <>
       <div className="home">
-        <header className="w-100 min-vh-100 d-flex align-items-center">
+        <header className="w-100 min-vh-100 pt-5">
           <Container>
-            <Row className="d-flex align-items-center">
+            <Row>
               <Col className="lg-6">
                 <h1 className="mb-4 fw-bold">
                   Jual Bandeng Presto
                   <br />
-                  Enak, Gurih & Bergizi
+                  Enak & Gurih Siap Menerima <br /> Pesanan dengan Jumlah
+                  Banyak.
                 </h1>
                 <p className="mb-4 ">
                   Jual bandeng presto dengan cita rasa yang tinggi dan enak. Ayo
@@ -45,25 +46,6 @@ const Home = () => {
                   </Carousel.Item>
                 </Carousel>
               </Col>
-              <div
-                className=" px-auto p-3 shadow rounded-4"
-                style={{ width: "550px" }}
-              >
-                <Row className="text-center">
-                  <Col>
-                    <h2>Laku </h2>
-                  </Col>
-                  <Col>
-                    <h2>
-                      100
-                      <span className="fs-5">Pcs</span>
-                    </h2>
-                  </Col>
-                  <Col>
-                    <h2>Perhari</h2>
-                  </Col>
-                </Row>
-              </div>
             </Row>
           </Container>
         </header>
